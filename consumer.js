@@ -4,8 +4,8 @@ createConsumer()
 
 async function createConsumer(){    
     const kafka = new Kafka({
-        clientId : "kafka_ornek_1",
-        brokers : ["192.169.0.14:9092"]
+        clientId : "kafka_queue",
+        brokers : ["127.0.0.1:9092"]
     });
     
     const consumer = kafka.consumer({
